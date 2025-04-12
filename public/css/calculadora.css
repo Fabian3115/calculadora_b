@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 360px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.calculator h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.calculator input,
+.calculator select,
+.calculator button {
+    width: 100%;
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.calculator input,
+.calculator select {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+.calculator input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.calculator button {
+    background: #00c6ff;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.calculator button:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #005ce6, #00b5ff);
+}
+
+.result {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
